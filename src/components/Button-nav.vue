@@ -10,7 +10,12 @@ import TheButtonVue from './The-button.vue'
 export default {
     components:{
             TheButtonVue
-    }
+    },
+    methods: {
+        setIndex (idx) {
+            this.$emit('action',idx)
+        }
+    },
 }
 </script>
 <style lang="scss">

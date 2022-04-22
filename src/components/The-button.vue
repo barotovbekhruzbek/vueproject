@@ -20,7 +20,7 @@ export default {
     methods: {
         setActive(idx) {
             this.activeBtn = idx
-            $emit('action',idx)
+            this.$emit('action', idx)
         }
     },
 }
